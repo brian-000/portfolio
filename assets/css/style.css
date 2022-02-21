@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --primary-color: #000000;
+    --secondary-color: #cecece;
+    --tertiary-color: #4d4b4b;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+    background-color: rgb(0, 0, 0);
+}
+
+header {
+    display: flex;
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 9999;
+}
+
+header div{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 0.5%;
+    margin-left: -6%;
+    background-color: var(--secondary-color);
+    padding-left: 200px;
+}
+
+header div h1 a {
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--tertiary-color);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav{
+    margin-top:2% ;
+    /*border-bottom: 3px solid var(--secondary-color);*/
+    margin-right: 2%;
+}
+
+header nav ul { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    padding: 10px 30px;
+    font-weight: lighter;
+    font-size: 1.25vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+
+}
+
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+section{
+    padding: 60px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("../images/hero-bg.jpg") ;
+    background-color: #000000;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    background-attachment: local;
+    background-position: 50%;
+    width: 100%;
+    height: 0%;
+}
+
+.hero div{
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    width:25%;
+    margin-top: 22%;
+    margin-left: 75%;
+    padding:25px;
+    border: solid 3px var(--tertiary-color);
+}
+
+.hero div p{
+    color: var(--tertiary-color);
+    font-size: 25px;
+}
+
+
+  
+
+.about {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px;
+    border-style: solid;
+    border-color: var(--tertiary-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.about p {
+    flex: 1;
+    padding: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about img {
+    width: 20%;
+    border-radius: 10px;
+    margin-right: 200px;
+}
+
+.portrait {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.work {
+    border: 10px;
+    border-style: solid;
+    border-color: var(--tertiary-color);
+}
+
+.run-buddy {
+    text-align: center;
+}
+
+.run-buddy img {
+    width: 80%;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+
+.horiseon {
+    text-align: center;
+}
+
+.horiseon img {
+    width: 40%;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+.contact {
+    text-align: center;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2{
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div{
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a{
+    color: var(--secondary-color);
+}
+
+.flex-row {
+    display: flex;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 30px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+ 
+
+
+  
+  }
+/*
+.content{
+    padding-left: 3%;
+    border-left: 5px solid var(--tertiary-color);
+    margin-left: 3%;
+    font-size: 35px;
+    width: 75%;
+  }
+
+.my-work {
+    display: flex; 
+    flex-wrap: nowrap; 
+}
+/*
+.subtitle{
+    background-color: var(--secondary-color);
+    width:25%;
+    height: 50px;
+    font-size: 15px;
+}
+
+
+.run-buddy{
+    display: flex;
+    margin: 2%;
+    width: 1000px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    background-image: url('../images/run-buddy.jpg');
+
+ 
+}
+.runbuddy:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
+.horieson-comingsoon1{
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.horieson{
+    flex-wrap: nowrap;
+    margin:2%;
+    width: 505px;
+    height: 200px;
+    background-size: cover;
+    border: 1px solid red;
+    background-image: url('../images/digital-marketing-meeting.jpg') ;
+}
+
+.coming-soon-1{
+    margin:2%;
+    width: 505px;
+    height: 200px;
+    background-size: cover;
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+
+
+.contact-me{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.contact-me content p{
+    width: 0%;
+}
+*/
