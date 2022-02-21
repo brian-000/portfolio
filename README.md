@@ -7,4 +7,5 @@ New Updates Coming Soon..
 <br/>
 <h1>SCREENSHOT OF WEBSITE</h1><br/>
 
-https://user-images.githubusercontent.com/97015333/154893047-57731b24-b090-4a3c-8271-5f71c8120ab7.png
+![brian-000 github io_portfolio_(iPhone XR)](https://user-images.githubusercontent.com/97015333/154893222-3d5fe126-26de-4c9a-9ab3-7adb9704a936.png)
+
